@@ -29,9 +29,6 @@ optional arguments:
                         
   ```
 
-## contributed by : 
-* [Nakul Jindal](https://github.com/nakul-jindal)
-
 ## References
 
 * **Title**: UNSUPERVISED REPRESENTATION LEARNING WITH DEEP CONVOLUTIONAL GENERATIVE ADVERSARIAL NETWORKS
