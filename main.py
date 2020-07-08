@@ -104,7 +104,7 @@ for epoch in range(num_epochs):
    
 
 
-from utils import compare_img , plot_loss , animation
+from utils import *
 plot_loss(G_losses,D_losses)   # visualise losses vs iterations
 compare_img(data,fake)         # compare generated imgs with real mnist images
 animation(img_list)            # visualise generated images on a fixed noise at intervals
