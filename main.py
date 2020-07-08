@@ -52,6 +52,7 @@ criterion = nn.BCELoss()
 
 real_label = 1
 fake_label = 0
+fixed_noise = torch.randn(batch_size, channels_noise, 1, 1).to(device)
 
 img_list = []
 G_losses = []
