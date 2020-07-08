@@ -108,6 +108,6 @@ with torch.no_grad():
     compare_img(data,fake)         # compare generated imgs with real mnist images
 
 plot_loss(G_losses,D_losses)   # visualise losses vs iterations
-animation(img_list)            # visualise generated images on a fixed noise at intervals
+Animation(img_list)            # visualise generated images on a fixed noise at intervals
 
 
