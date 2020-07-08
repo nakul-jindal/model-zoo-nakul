@@ -26,6 +26,7 @@ num_epochs = args.num_epochs
 image_size = 64
 features_d = 128
 features_g = 128
+channels_img = 3
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
