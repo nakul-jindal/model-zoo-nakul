@@ -1,4 +1,5 @@
 import numpy as np
+import torch
 import torchvision
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
