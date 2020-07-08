@@ -5,6 +5,7 @@ import torch.optim as optim                 # For all Optimization algorithms, S
 import torchvision.datasets as datasets     # Has standard datasets we can import in a nice way
 import torchvision.transforms as transforms # Transformations we can perform on our dataset
 from torch.utils.data import DataLoader     # Gives easier dataset managment and creates mini batches
+from utils import *
 
 import argparse
 parser = argparse.ArgumentParser()
@@ -102,11 +103,11 @@ for epoch in range(num_epochs):
                 fake = netG(fixed_noise).detach().cpu()
             img_list.append(torchvision.utils.make_grid(fake, padding=2, normalize=True))
    
+with torch.no_grad():
+    fake = netG(fixed_noise)
+    compare_img(data,fake)         # compare generated imgs with real mnist images
 
-
-from utils import *
 plot_loss(G_losses,D_losses)   # visualise losses vs iterations
-compare_img(data,fake)         # compare generated imgs with real mnist images
 animation(img_list)            # visualise generated images on a fixed noise at intervals
 
 
